@@ -1,0 +1,109 @@
+:root {
+  --green-light: #9dc88d;
+  --green-mid: #4d774e;
+  --green-dark: #164a41;
+}
+
+main.login-background {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(135deg, #0f172a 0%, var(--green-dark) 50%, #0f172a 100%);
+  z-index: -1;
+}
+
+
+section.login-container {
+  width: 90%;
+  max-width: 400px;
+  min-width: 280px;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 20px rgba(22, 74, 65, 0.15);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: var(--green-dark);
+  border: 1px solid rgba(157, 200, 141, 0.2);
+}
+
+
+h1 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--green-mid);
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label {
+  font-weight: 600;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--green-mid);
+}
+
+input {
+  padding: 0.65rem 1.1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.8px solid var(--green-light);
+  background-color: #e6f4ea;
+  color: #264d26;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+  color: #7ca98d;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--green-mid);
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+  background-color: #d9f0d9;
+}
+
+button {
+  padding: 0.9rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(2, 100, 23, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(2, 22, 9, 0.3);
+}
+
+button:hover {
+  background-color: var(--green-light,0.2);
+}
+
+.error {
+  color: #861212;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  text-align: left;
+  text-align: center;
+}
+
+.demo-note {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: center;
+  margin-top: -0.3rem;
+  margin-bottom: -0.5rem;
+}
