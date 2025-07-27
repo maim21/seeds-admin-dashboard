@@ -16,7 +16,7 @@ A responsive, modern Admin Dashboard built for an E-learning platform using **Ne
 
 ### 1. Clone the Repository
 
-    git clone <insert-repo-link>
+    git clone https://github.com/maim21/seeds-admin-dashboard.git
     cd seeds-admin-dashboard
 
 ### 2. Install Dependencies
